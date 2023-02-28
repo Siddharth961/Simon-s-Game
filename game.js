@@ -9,7 +9,7 @@ let level = 1;
 let start = true;
 let colors = ["green","red","yellow","blue","wrong"]
 
-$(document).keypress(function(){
+$(document).on("keypress touch",function(){
     if(start){
         $("h1").text("Level   " + level)
         console.log(1);
