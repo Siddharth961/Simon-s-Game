@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #011F3F;
+    
+    min-height: 100vh;
+    
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #011F3F;
+
+    flex-direction: column;
+}
+h1{
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: #fef2bf;
+    text-align: center;
+    line-height: 80px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    margin: 26px;
+    border-radius: 34px;
+    border: 10px solid black;
+    
+    box-sizing: border-box;
+}
+
+
+.green{
+    background-color: #008000;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: #0000FF;
+}
+
+.effect{
+    animation-name: animate;
+    animation-duration: .2s;
+}
+@keyframes animate {
+    0%{}
+
+    50%{
+        border: 8px solid rgba(248, 248, 255, 0.505);
+    }
+
+    100%{
+        border: 10px solid black;
+    }
+}
+.end{
+    animation-name: gameover;
+    animation-duration: 2s;
+}
+
+@keyframes gameover{
+    0%{
+        
+    }
+
+    20%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 0.8;
+    }
+
+    80%{
+        opacity: 0.2;    
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
