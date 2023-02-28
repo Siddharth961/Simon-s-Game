@@ -1,7 +1,3 @@
-const boxes = $(".box");
-console.log(boxes[0]);
-
-
 let task = "";
 let ans = "";
 let num;
@@ -9,10 +5,10 @@ let level = 1;
 let start = true;
 let colors = ["green","red","yellow","blue","wrong"]
 
-$(document).on("keypress tap",function(){
+$(document).on("keypress touchstart",function(){
     if(start){
         $("h1").text("Level   " + level)
-        console.log(1);
+        
         setTimeout(function(){
 
             nextSequence();
@@ -25,8 +21,7 @@ $(document).on("keypress tap",function(){
 function nextSequence(){
     num = Math.floor(Math.random()*4);
     task += num;
-    console.log(num)
-    console.log(task)
+    
     
     for(let k=0; k<task.length; k++){
         sequence_delay(k);        
@@ -57,7 +52,7 @@ function pressed(clicked){
 
     ans += clicked;
     sound(clicked);
-    console.log(ans)
+    
     check();
 }
 
@@ -82,8 +77,8 @@ function check(){
 
     else{
         $(".main").fadeTo("slow",0.6).fadeTo("fast",1)
-        console.log($(".main"))
-        $("h1").text("Game Over,Press  Key to Restart")
+        
+        $("h1").text("Game Over,Press Any Key to Restart")
         sound(4);
         sound(4);
         sound(4);
