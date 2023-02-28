@@ -83,7 +83,7 @@ function check(){
     else{
         $(".main").fadeTo("slow",0.6).fadeTo("fast",1)
         console.log($(".main"))
-        $("h1").text("Game Over,Press Any Key to Restart")
+        $("h1").text("Game Over,Press  Key to Restart")
         sound(4);
         sound(4);
         sound(4);
