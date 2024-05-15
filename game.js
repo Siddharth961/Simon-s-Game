@@ -5,7 +5,7 @@ let level = 1;
 let start = true;
 let colors = ["green","red","yellow","blue","wrong"]
 
-$(document).on("keypress touchstart",function(){
+$(document.querySelector('button')).on("click",function(){
     if(start){
         $("h1").text("Level   " + level)
         
