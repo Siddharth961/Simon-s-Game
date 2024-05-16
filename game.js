@@ -78,7 +78,7 @@ function check(){
     else{
         $(".main").fadeTo("slow",0.6).fadeTo("fast",1)
         
-        $("h1").text("Game Over,Press Any Key to Restart")
+        $("h1").text("Game Over, to restart press")
         sound(4);
         sound(4);
         sound(4);
